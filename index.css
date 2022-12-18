@@ -421,6 +421,9 @@ ul{
 /* --------------------media query for menu---------------- */
 
 @media only screen and (max-width: 800px) {
+    .menuitems{
+        display: none;
+    }
     nav ul{
         position: absolute;
         top: 70px;
@@ -432,7 +435,7 @@ ul{
     }
 
     .row .col-2{
-        margin-top: 65px;
+        margin-top: 0px;
     }
 
     nav ul li{
@@ -462,13 +465,26 @@ ul{
     .col-2,.col-3,.col-4{
         flex-basis: 100%;
     }
+    .title-featured-products{
+            margin: 0 auto 50px;
+    }
+    .col-4{
+        
+        margin-bottom: 20px;
+    }
+    
+    .row .col-2{
+        margin-top: 50px;
+        align-items: center;
+        justify-content: center;
+    }
     
     .col-2.imagesection img{
         display: none;
     }
 
     .col-2 h1{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .col-2 .custm-p{
         font-size: 0.7rem;

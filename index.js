@@ -4,20 +4,20 @@ console.log(`WELCOME TO D-BURGER'S`);
 //--------------------- for menu button---------------
 
 let menubtn = document.getElementById('menubtn')
-let menuitems = document.getElementById('menu-items')
 
 // adding an eventlistner when menu button is clicked
 menubtn.addEventListener('click', function () {
-
+    
+    let menuitems = document.getElementById('menuitems')
     // at default the menu section will be visible. when clicked on button menu display will be block so it will execute the else part . 
-
-    if (menuitems.style.display == 'none') {
-        menuitems.style.display = 'block'
-    }
-     else {
         
+    if (menuitems.style.display === "none" || menuitems.style.display === "") {
+        menuitems.style.display ="block"
+    }else {
         menuitems.style.display = 'none'
+        
     }
+
 })
 
 //--------------------- for menu button---------------
